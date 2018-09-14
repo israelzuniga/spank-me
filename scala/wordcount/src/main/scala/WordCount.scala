@@ -21,6 +21,14 @@ object WordCount {
       .map(word => (word, 1))
       .reduceByKey(_ + _)
 
+    // Display the count
+    counts.foreach(println)
+    println("Total words: " + counts.count())
+
+    // Save the computation result
+    counts.saveAsTextFile("quijoteCount")
+
+
 
   }
 }
