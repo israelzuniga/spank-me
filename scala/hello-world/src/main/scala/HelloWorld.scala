@@ -8,7 +8,9 @@ object HelloWorld {
     conf.setAppName("Hello World")
     val sc = new SparkContext(conf)
 
-
+    //Say hello & goodbye!
+    println("Hellow, world!")
+    println("kthxbai")
   }
 
 }
