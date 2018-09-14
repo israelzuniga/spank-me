@@ -11,6 +11,9 @@ object HelloWorld {
     //Say hello & goodbye!
     println("Hellow, world!")
     println("kthxbai")
+
+    // Gently stop Spark
+    sc.stop()
   }
 
 }
